@@ -1,0 +1,646 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: auto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px 0 40px;
+    align-items: center;
+    width: 100%;
+}
+main{
+    width: 100%;
+    background: url(desktop/image-header.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header ul{
+    display: flex;
+    gap: 40px;
+}
+header ul li{
+    list-style-type: none;
+}
+header ul li a{
+   text-decoration: none;
+   color:white ;
+   font-weight: 600;
+   font-size: 18px;
+   cursor: pointer;
+   transition: all ease-in-out 0.2s;
+}
+header ul li a:hover{
+  color: rgb(0, 0, 0);
+}
+header ul li:last-child a{
+    color: black;
+    font-family: "Fraunces", serif;
+    padding: 15px 30px;
+    background-color: white;
+    border-radius: 30px;
+    transition: all  ease-in-out 0.2s;
+}
+header ul li:last-child a:hover{
+    background-color: rgba(255, 255, 255, 0.362);
+    color: white;
+}
+
+main h1{
+    font-family: "Fraunces", serif;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+.arrow{
+   margin-bottom: 15%;
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr) ;
+}
+.a {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+aside{
+    width: 100%;
+}
+aside h1{
+    font-family: "Fraunces", serif;
+    font-size: 40px;
+    max-width: 450px;
+    color:  hsl(212, 27%, 19%);
+    margin-bottom: 50px;
+}
+aside.a h1{
+    font-size: 45px;
+}
+aside p{
+    color:  hsl(232, 10%, 55%);
+    font-weight: 600;
+    max-width: 450px;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+aside a{
+    text-transform: uppercase;
+    color:  hsl(212, 27%, 19%);
+    font-size: 18px;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    align-self: flex-start;
+    margin-left: 135px;
+    position: relative;
+    text-decoration: none;
+}
+aside a::before{
+    content: "";
+    position: absolute;
+    left: -5px;
+    right: -5px;
+    bottom: -2px;
+    height: 10px;
+    background-color: hsla(51, 100%, 49%, 0.279);
+    border-radius: 30px;
+    z-index: -5;
+}
+aside.b a::before{
+    background-color:hsla(7, 99%, 70%, 0.264);
+}
+aside.a a:hover::before{
+    background-color: hsl(51, 100%, 49%);
+    transition: all ease-in-out 0.1s;
+}
+aside.b a:hover::before{
+    background-color:hsl(7, 99%, 70%);
+    transition: all ease-in-out 0.1s;
+}
+picture.egg{
+    grid-area: 1 / 2 / 2 / 3;
+}
+picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+picture.kas{
+    grid-area: 2 / 1 / 3 / 2;
+}
+.b{
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.graphic{
+    grid-area: 3 / 1 / 4 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: url(desktop/image-graphic-design.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.graphic h3{
+    font-family: "Fraunces", serif;
+    font-size: 30px;
+    color:hsl(167, 40%, 24%) ;
+    margin-bottom: 30px;
+}
+.graphic p{
+    max-width: 380px;
+    font-size: 18px;
+    color:hsl(167, 40%, 24%) ;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+.phtograph{
+    grid-area: 3 / 2 / 4 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: url(desktop/image-photography.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.phtograph h3{
+    font-family: "Fraunces", serif;
+    font-size: 30px;
+    color:hsl(198, 62%, 26%);
+    margin-bottom: 30px;
+}
+.phtograph p{
+    max-width: 380px;
+    font-size: 18px;
+    color:hsl(198, 62%, 26%);
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+article{
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 100px;
+}
+article h4{
+    font-family: "Fraunces", serif;
+    text-transform: uppercase;
+    color:hsl(210, 4%, 67%) ;
+    margin-bottom: 50px;
+    font-size: 22px;
+    letter-spacing: 5px;
+}
+.comments{
+    display: flex;
+    width: 100%;
+   gap: 30px;
+}
+.comment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.comment img{
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 60px;
+}
+.comment .disc{
+    font-weight: 500;
+    text-align: center;
+    font-size: 19px;
+    line-height: 1.6;
+    color:hsl(210, 9%, 39%);
+    margin-bottom: 60px;
+}
+.comment .name{
+    font-family: "Fraunces", serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+.comment .type{
+    font-size: 14px;
+    color:hsl(210, 4%, 67%) ;
+    font-weight: 500;
+}
+figure{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.milk{
+    grid-area: 1 / 1 / 2 / 2;
+}
+.orange{
+    grid-area: 1 / 2 / 2 / 3;
+}
+.cone{
+    grid-area: 1 / 3 / 2 / 4;
+}
+.sugar{
+    grid-area: 1 / 4 / 2 / 5;
+}
+figure picture img{
+    object-fit: cover;
+    
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    background-color: hsla(168, 48%, 51%, 0.544) ;
+}
+footer h3{
+    font-size: 26px;
+    color: hsl(168, 46%, 31%) ;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+footer ul{
+    display:flex;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+footer li{
+    list-style: none;
+}
+footer a{
+    text-decoration: none;
+    color: hsl(168, 46%, 31%) ;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+footer a:hover ,.links i:hover{
+    color: white;
+}
+.links{
+    display: flex;
+    gap: 20px;
+}
+.links i{
+    font-size: 24px;
+    color: hsl(168, 46%, 31%) ;
+    cursor: pointer;
+}
+nav {
+    padding: 1rem;
+    display: none;
+    background-color: rgba(34, 37, 49, 0);
+}
+/* ham menu */
+.ham-menu {
+    height: 50px;
+    width: 40px;
+    position: absolute;
+    display: none;
+    top: 20px;
+    right: 20px;
+}
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+.ham-menu.active span {
+    background-color: white;
+}
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.hidden{
+    top: 80px;
+}
+@media (max-width:800px){
+    main h1{
+        font-size: 40px;
+        margin-bottom: 80px;
+    }
+    .arrow{
+        width: 30px;
+        margin-bottom: 50px;
+    }
+    aside h1{
+        font-family: "Fraunces", serif;
+        font-size: 30px;
+        max-width: 450px;
+        color:  hsl(212, 27%, 19%);
+        margin-bottom: 50px;
+    }
+    aside{
+        padding: 40px;
+    }
+    aside.a h1{
+        font-size: 30px;
+    }
+    aside p{
+        color:  hsl(232, 10%, 55%);
+        font-weight: 600;
+        max-width: 450px;
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 40px;
+    }
+    aside a{
+        font-size: 16px;
+        margin-left: 0;
+    
+    }
+    .graphic h3{
+        font-family: "Fraunces", serif;
+        font-size: 20px;
+        color:hsl(167, 40%, 24%) ;
+        margin-bottom: 15px;
+    }
+    .graphic p{
+        max-width: 380px;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .phtograph h3{
+        font-family: "Fraunces", serif;
+        font-size: 20px;
+        color:hsl(198, 62%, 26%);
+        margin-bottom: 15px;
+    }
+    .phtograph p{
+        max-width: 380px;
+        font-size: 16px;
+        color:hsl(198, 62%, 26%);
+        font-weight: 500;
+        text-align: center;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+    article{
+       padding: 50px;
+    }
+    article h4{
+        margin-bottom: 30px;
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    .comments{
+        display: flex;
+        width: 100%;
+       gap: 15px;
+    }
+    .comment img{
+        width: 60px;
+        border-radius: 50%;
+        margin-bottom: 30px;
+    }
+    .comment .disc{
+        font-weight: 500;
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.6;
+        color:hsl(210, 9%, 39%);
+        margin-bottom: 30px;
+    }
+    .comment .name{
+        font-family: "Fraunces", serif;
+        font-size: 18px;
+        margin-bottom: 8px;
+        font-weight: 800;
+    }
+    .comment .type{
+        font-size: 14px;
+        color:hsl(210, 4%, 67%) ;
+        font-weight: 500;
+    }
+ 
+}
+@media (max-width:600px){
+    main{
+        background: url(mobile/image-header.jpg) no-repeat;
+        background-size: cover;
+        background-position: top 0 bottom 0 right 0 left 0 center;
+    }
+    header{
+        padding: 30px 40px 0 20px;
+        align-items: center;
+        width: 100%;
+    }
+    nav{
+        display: block;
+    }
+    .ham-menu {
+        height: 50px;
+        width: 40px;
+        margin-left: auto;
+        position: relative;
+        display:block;
+        position: absolute;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    main h1{
+      font-size: 26px;
+       margin-bottom: 30px;
+    }
+    header img{
+        margin-bottom: 40px;
+    }
+    header ul{
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        background-color: white;
+        padding: 40px;
+        gap: 20px;
+        position: absolute;
+        top:-1000px;
+        right: 50%;
+        transform: translateX(50%);
+        transition: all  0.3s ease;
+    }
+    header ul::after{
+        content: " ";
+        border-width: 30px;
+        border-style: solid;
+       border-left-color: transparent;
+       border-top-color: transparent;
+       border-bottom-color: transparent;
+       border-right-color: white;
+        position: absolute;
+        top: -20px;
+        right: 0;
+    
+    }
+    header ul li a{
+        text-decoration: none;
+        color: hsl(232, 10%, 55%) ;
+        font-weight: 500;
+     }
+     header ul li:last-child a{
+        color: black;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 700;
+        font-family: "Fraunces", serif;
+        padding: 15px 30px;
+        background-color: hsl(51, 100%, 49%);
+    }
+    header ul li:last-child{
+        margin-top: 20px;
+    }
+    header ul li:last-child a:hover{
+        background-color: rgba(255, 255, 255, 0.362);
+        color: white;
+    }
+    .arrow{
+        width: 30px;
+        margin-bottom: 100px;
+    }
+     section{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(6,1fr) ;
+     }
+    picture.egg{
+    grid-area: 1 / 1 / 2 / 3;
+      width: 100%;
+    }
+    .a {
+      grid-area: 2 / 1 / 3 / 3;
+        display: block;
+        height: auto;
+    }
+    aside{
+        width: auto;
+        text-align: center;
+    }
+    aside h1{
+    width: auto;
+        font-size: 30px;
+      text-align: center;
+       
+        margin-bottom: 20px;
+    }
+    aside.a h1{
+        font-size: 30px;
+    }
+    aside p{
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+    aside a{
+        font-size: 16px;
+        align-self: center;
+        margin-left: 0;
+    }
+    picture.kas{
+    grid-area: 3 / 1 / 4 / 3;
+    }
+    .b{
+   grid-area: 4 / 1 / 5 / 3;
+    }
+    .graphic{
+grid-area: 5 / 1 / 6 / 3;
+    }
+    .phtograph{
+grid-area: 6 / 1 / 7 / 3;
+    }
+    header ul li:last-child a{
+        transition: all 0.2s;
+    }
+    header ul li:last-child a:hover{
+        padding: 9px;
+        background-color: hsl(49, 100%, 50%);
+        color: black;
+    }
+    article{
+        text-align: center;
+        padding: 20px;
+    }
+    .comments{
+        display: flex;
+        flex-direction: column;
+    }
+    .comment{
+        width: 100%;
+    }
+    figure{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .milk{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .orange{
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    .cone{
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    .sugar{
+        grid-area: 2 / 2 / 3 / 3;
+    }
+}
